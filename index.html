@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<title>Calculatrice en formulaire</title>
+	</head>
+
+ 	<body>
+		<div id="block_page">
+ 			<h1>Calculatrice à deux nombres</h1>
+
+	 			<form>
+					<input id="nb1" class="nombreEntre" type="text" placeholder="Premier nombre" maxlength="4" /> <!-- Premier nombre -->
+
+	 				<select id="operators"> <!-- Choix du type d'opérateur -->
+						<option value="+">Additionner</option>
+						<option value="-">Soustraire</option>
+						<option value="*">Multiplier</option>
+						<option value="/">Diviser</option>
+						<option value="%">Modulo</option>
+					</select>
+
+	 				<input id="nb2" class="nombreEntre" type="text" placeholder="Deuxième nombre" maxlength="4" /> <!-- Deuxième nombre -->
+
+	 				<input class="calculer" value="Calculer" onclick="calc();" />
+
+	 				<input id="resultat" type="text" placeholder="Résultat" maxlength="0" />
+				</form>
+ 		</div>
+
+ 		<script type="text/javascript" src="./js/script.js"></script>
+	</body>
+</html> 
